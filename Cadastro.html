@@ -1,0 +1,89 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ======== ESTILO INCORPORADO PARA O FOOTER ======== */
+        footer {
+            background-color: #003366; /* azul escuro */
+            color: white; /* texto branco */
+            text-align: center; /* centraliza o texto */
+            padding: 15px 0; /* espaço interno superior e inferior */
+            font-size: 16px; /* tamanho do texto */
+            position: relative; /* mantém o rodapé no fluxo normal da página */
+            bottom: 0;
+            width: 100%; /* ocupa toda a largura */
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1); /* leve sombra superior */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de clientes</h1>
+        <p>Preencha os dados abaixo para cadastrar clientes</p>
+    </header>
+    <main>
+        <section>
+        <form action="" method="POST">
+            <label for="nome">Nome completo: </label>
+            <input type="text" size = "50" id="nome" name="nome" required ><br><br>
+
+            <label for="email">Email: </label>
+            <input type="text" size = "40" id="email" name="email" required><br><br>
+
+            <label for="endereco">Endereço: </label>
+            <input type="text" size = "70" id="endereco" name="endereco" required><br><br>
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" size = "20" id="cidade" name="cidade" required><br><br>
+
+            <label for="estado">Estado:</label>
+
+            <select id="estado" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br><br>
+
+            <button type="submit"style="background-color: blue; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Cadastrar</button>            <button type="reset" style="background-color: red; color: white; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Limpar</button>
+
+        </form>
+        </section>
+    </main>
+    <footer>
+        Visite nossas páginas nas redes sociais!!
+    </footer>
+
+</body>
+
+</html>
